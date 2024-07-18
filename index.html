@@ -1,296 +1,798 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <link rel="icon" href="./images/lzl_cug.jpg">
-  <link rel="stylesheet" href="main.css" type="text/css" />
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <!--- <title></title> --->
-  <title>Zhenglai Li</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>Zhenglai Li's Homepage</title>
+  <link rel="icon" type="image/png" href="images/icon.jpg">
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <link href='css/style.css?_t=20200916' rel='stylesheet' type='text/css'>
+  <script defer src="font-awesome-5.9.0/js/brands.min.js"></script>
+  <script defer src="font-awesome-5.9.0/js/fontawesome.min.js"></script>
+  <style>
+    .red {
+      color: #ff0000;
+      /*        color: #D70000;*/
+      font-style: normal;
+    }
+
+    #intro {
+      margin-top: 0.2em !important;
+    }
+
+    .content h3 {
+      margin-bottom: 1em !important;
+      margin-top: 2.5em !important;
+    }
+
+    .content figure {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .columns:not(:last-child) {
+      margin-bottom: 1.75rem !important;
+    }
+
+    #sidebar {
+      width: 80%;
+    }
+
+    #sidebar .menu-list a.is-active {
+      background-color: #9dd5d8;
+    }
+
+    @media screen and (min-width: 769px),
+    print {
+
+      .column.is-2_5,
+      .column.is-2-tablet {
+        flex: none;
+        width: 20%;
+      }
+    }
+
+    .next-element-vertical-align-middle+span {
+      vertical-align: middle;
+    }
+
+    .next-element-vertical-align-text-top+span {
+      vertical-align: text-top;
+    }
+
+    .vertical-align-text {
+      vertical-align: text-bottom;
+    }
+
+    .partial-visible li:nth-child(n+20) {
+      display: none;
+    }
+
+    .partial-visible .show-more:nth-child(n+21) {
+      display: block !important;
+    }
+
+    .news-list:not(.partial-visible) .show-more {
+      display: block !important;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-  <div id="layout-content"> <!-- nomenu  -->
-    <div id="text-img-container">
-      <div id="img-container">
-        <img src="./images/rotation.gif" alt="" height="220px" />
-      </div>
-      <div id="text-container">
-        <h2><strong>Zhenglai Li (李正来)</strong> <br />
-          <br />
-        </h2>
-        <h3>Ph.D. student<br /></h3>
-        <h3><a href="https://www.cug.edu.cn/" target=&ldquo;blank&rdquo;>China University of Geosciences,
-            Wuhan</a><br /></h3>
-        <h3>E-mail: <tt>yuezhenguan@cug.edu.cn</tt>
-          <p><a href="https://github.com/guanyuezhen" target=&ldquo;blank&rdquo;>[<tt>GitHub</tt>]</a>
-            <a href="https://scholar.google.com/citations?user=8GJLvG8AAAAJ&hl=en"
-              target=&ldquo;blank&rdquo;>[<tt>Google Scholar</tt>]</a> <br />
-          </p>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2_5">
+          <div class="sticky">
+            <figure class="image" style="width: 13rem;max-width: 100%;">
+              <img class="is-expanded" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs="
+                id="avatar">
+            </figure>
+            <div class="content">
+              <h3 style="margin-top: 1em">Zhenglai Li</h3>
+              <h6>None</h6>
+            </div>
+            <!-- details -->
+            <div class="details">
+              <h3>Email:</h3>
+              <p>yuezhenguan@cug.edu.cn</p>
+            </div>
+
+            <div class="social">
+              <a href="https://github.com/guanyuezhen" target="_blank">
+                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none"></span>
+              </a>
+              <a href="https://scholar.google.com/citations?user=8GJLvG8AAAAJ&hl" target="_blank">
+                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none"></span>
+              </a>
+              </a>
+            </div>
+
+
+            <div id="sidebar" class="menu sticky is-hidden-mobile">
+              <p class="menu-label"><b>Quick Links</b></p>
+              <ul class="menu-list">
+                <li><a href="#intro">About Me</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#miscellaneous">Miscellaneous</a></li>
+              </ul>
+              <div class="column" style="width: 40%">
+                <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=rEET13S5KgQ7jwbd_dxFYkulH0Ngcogp7YrfYZdwWVA&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="column right-panel">
+          <div class="content">
+
+
+            <!--About Me-->
+            <h3 id="intro">About Me</h3>
+            <p>
+              I am an incoming assistant professor at the Faculty of Data Science, City University of Macau (CityU
+              Macau).
+              <li> Ph.D. degree in Geo-information Engineering supervised by <a href="https://tangchang.net/">Prof.
+                  Chang Tang</a> from the <a href="https://cs.cug.edu.cn/">School of Computer Science</a>, China
+                University of Geosciences, Wuhan (CUG), 09/2021 - 06/2024.</li>
+              <li> M.S. degree in Computer Technology supervised by <a href="https://tangchang.net/">Prof. Chang
+                  Tang</a> from the <a href="https://cs.cug.edu.cn/">School of Computer Science</a>, China University of
+                Geosciences, Wuhan (CUG), 09/2018 - 06/2021.</li>
+              <li> B.E. degree in Exploration Technology and Engineering from the <a
+                  href="https://dkxy.cug.edu.cn/index.htm">School of Geophysics and Geomatics</a>, China University of
+                Geosciences, Wuhan (CUG), 09/2014 - 06/2018.</li>
+            </p>
+
+            <h3 id="intro">Research Interests</h3>
+            <p>
+              My research area is in Machine Learning and Deep Learning. Specific topics include
+              self-supervised/unsupervised/weakly-supervised learning, multi-view/modal representation learning.
+
+              I'm always interested in meeting new people and hearing about potential collaborations. If you'd like to work together or get in contact with me, please feel free to email.
+            </p>
+
+            <!--News-->
+            <h3 id="news">
+              News
+            </h3>
+            <ul class="partial-visible news-list">
+      
+              <li>
+                <span>
+                  [07/2024] One co-author paper "Heterogeneous Graph Guided Contrastive Learning for Spatially Resolved Transcriptomics Data" has been accepted to ACM International Conference on Multimedia.
+              </li>
+
+              <li>
+                <span>
+                  [06/2024] I have been awarded a Doctor Degree of Geo-information Engineering (PhD) on Jun 20, 2024.
+              </li>
+              
+              <li>
+                <span>
+                  [05/2024] One paper <a href="https://ieeexplore.ieee.org/abstract/document/10534838" target="_blank">"MS-Former: Memory-Supported Transformer for Weakly Supervised Change Detection With Patch-Level Annotations"</a> has been accepted to IEEE Transactions on Geoscience and Remote Sensing.
+              </li>
+
+              <li>
+                <span>
+                  [05/2024] One co-author paper <a href="https://ieeexplore.ieee.org/abstract/document/10529609" target="_blank">"Multiple Kernel Clustering with Adaptive Multi-scale Partition Selection"</a> has been accepted to IEEE Transactions on Knowledge and Data Engineering.
+              </li>
+            </ul>
+
+
+            <h3 id="publications">Publications <span
+                style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .1rem;"><a
+                  href="https://scholar.google.com/citations?user=8GJLvG8AAAAJ&hl" target="_blank">[Google
+                  Scholar]</a></span></h3>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2024_AR-CDNet.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Towards Accurate and Reliable Change Detection of Remote Sensing Images via Knowledge Review and Online Uncertainty Estimation
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Xianju Li, Weiying Xie, Kun Sun, Xinzhong Zhu
+                    <br>
+                    <i>
+                      Under Review
+                    </i>
+                    <br>
+                    <a href="https://arxiv.org/pdf/2305.19513" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/AR-CDNet" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2024MM_stGCL.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Heterogeneous Graph Guided Contrastive Learning for Spatially Resolved Transcriptomics Data
+                    </b>
+                    <br>
+                    Xiao He, Chang Tang, Xinwang Liu, Chuankun Li, Shan An, <b>Zhenglai Li</b>
+                    <br>
+                    <i>
+                      ACM International Conference on Multimedia (<b>ACM MM</b>), 2024
+                    </i>
+                    <br>
+                    [PDF]
+                    [BibTeX]
+                    [Code (GitHub)]
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2024TGRS_MS-Former.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      MS-Former: Memory-Supported Transformer for Weakly Supervised Change Detection with Patch-Level Annotations
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Changdong Li, Xianju Li, Wei Zhang
+                    <br>
+                    <i>
+                      IEEE Transactions on Geoscience and Remote Sensing (<b>TGRS</b>), 2024
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10534838" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/MS-Former " target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2024TKDE_MPS.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Multiple Kernel Clustering with Adaptive Multi-scale Partition Selection
+                    </b>
+                    <br>
+                    Jun Wang, <b>Zhenglai Li</b>, Chang Tang, Suyuan Liu, Xinhang Wan, Xinwang Liu
+                    <br>
+                    <i>
+                      IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2024
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10529609" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/WangJun2023/MPS" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2023MM_DPNET.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      DPNET: Dynamic Poly-attention Network for Trustworthy Multi-modal Classification
+                    </b>
+                    <br>
+                    Xin Zou, Chang Tang, Xiao Zheng, <b>Zhenglai Li</b>, Xiao He, Shan An, Xinwang Liu
+                    <br>
+                    <i>
+                      ACM International Conference on Multimedia (<b>ACM MM</b>), 2023
+                    </i>
+                    <br>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612652" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/Obananas/DPNET" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2023_MSL-MKC.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Mutual Structure Learning for Multiple Kernel Clustering
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Xiao Zheng, Zhiguo Wan, Kun Sun, Wei Zhang, Xinzhong Zhu
+                    <br>
+                    <i>
+                      Information Sciences, 2023
+                    </i>
+                    <br>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0020025523010307" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/MSL-MKC" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2023TGRS_A2Net.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Lightweight Remote Sensing Change Detection with Progressive Feature Aggregation and Supervised Attention
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Wei Zhang, Jie Dou, Lizhe Wang, Albert Zomaya
+                    <br>
+                    <i>
+                      IEEE Transactions on Geoscience and Remote Sensing (<b>TGRS</b>), 2023
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10034814" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/A2Net" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2022MM_EMKC.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Efficient Multiple Kernel Clustering via Spectral Perturbation
+                    </b>
+                    <br>
+                    Chang Tang, <b>Zhenglai Li (co-first author)</b>, Weiqing Yan, Guanghui Yue, Wei Zhang
+                    <br>
+                    <i>
+                      ACM International Conference on Multimedia (<b>ACM MM</b>), 2022
+                    </i>
+                    <br>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548153" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2022TGRS_TFI-GR.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Remote Sensing Change Detection via Temporal Feature Interaction and Guided Refinement
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Lizhe Wang, Albert Y Zomaya
+                    <br>
+                    <i>
+                      IEEE Transactions on Geoscience and Remote Sensing (<b>TGRS</b>), 2022
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9863802/" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/TFI-GR" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2022-KSKL.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Unified K-means Coupled Self-representation and Neighborhood Kernel Learning for Clustering Single-cell RNA-Sequencing Data
+                    </b>
+                    <br>
+                    Zheng Li, Chang Tang, Xiao Zheng, <b>Zhenglai Li</b>, Wei Zhang, Lijuan Cao
+                    <br>
+                    <i>
+                      Neurocomputing, 2022
+                    </i>
+                    <br>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0925231222007664" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2022TKDE_UOMVSC.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Unified One-step Multi-view Spectral Clustering
+                    </b>
+                    <br>
+                    Chang Tang, <b>Zhenglai Li (co-first author)</b>, Jun Wang, Xinwang Liu, Wei Zhang, En Zhu
+                    <br>
+                    <i>
+                      IEEE Transactions on Knowledge & Data Engineering (<b>TKDE</b>), 2022
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9769920" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/UOMvSC" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2022TIP_HCP-IMSC.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      High-order Correlation Preserved Incomplete Multi-view Subspace Clustering
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Xiao Zheng, Xinwang Liu, Wei Zhang, En Zhu
+                    <br>
+                    <i>
+                      IEEE Transactions on Image Processing (<b>TIP</b>), 2022
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9718038" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/HCP-IMSC" target="_blank"  class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2021_RLFFC.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Hyperspectral Band Selection via Region-aware Latent Features Fusion based Clustering
+                    </b>
+                    <br>
+                    Jun Wang, Chang Tang, <b>Zhenglai Li</b>, Xinwang Liu, Wei Zhang, En Zhu, Lizhe Wang
+                    <br>
+                    <i>
+                      Information Fusion, 2021
+                    </i>
+                    <br>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1566253521001950" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/WangJun2023/RLFFC" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2021ICME_TMBSD.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Tensor-Based Multi-View Block-Diagonal Structure Diffusion for Clustering Incomplete Multi-View Data
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Xiao Zheng, Wei Zhang, En Zhu
+                    <br>
+                    <i>
+                      IEEE International Conference on Multimedia and Expo (<b>ICME</b>), 2024
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9428106/" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/TMBSD" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2021TMM_CGL.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Consensus Graph Learning for Multi-view Clustering
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Xiao Zheng, Guanghui Yue, Wei Zhang, En Zhu
+                    <br>
+                    <i>
+                      IEEE Transactions on Multimedia (<b>TMM</b>), 2021
+                    </i>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9437715" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <a href="https://github.com/guanyuezhen/CGL" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2019_DCMSC.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Diversity and Consistency Learning Guided Spectral Embedding for Multi-view Clustering
+                    </b>
+                    <br>
+                    <b>Zhenglai Li</b>, Chang Tang, Jiajia Chen, Cheng Wan, Weiqing Yan, Xinwang Liu
+                    <br>
+                    <i>
+                      Neurocomputing, 2019
+                    </i>
+                    <br>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0925231219311105" target="_blank">[PDF]</a>
+                    <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <h3 id="miscellaneous">
+              Honors and Awards
+            </h3>
+            <ul>
+              <li>
+                The Rui-Ming Alumni Scholarship in China University of Geosciences, Wuhan, 2022.
+              </li>
+              <li>
+                The Rui-Ming Alumni Scholarship in China University of Geosciences, Wuhan, 2022.
+              </li>
+              <li>
+                The Third Prize of the 17th China Post-graduate Mathematical Contest in Modeling, 2019.
+              </li>
+              <li>
+                The Third Prize of the 16th China Post-graduate Mathematical Contest in Modeling, 2018.
+              </li>
+            </ul>
+
+
+            <h3 id="miscellaneous">
+
+              <h3>
+                Academic Services
+              </h3>
+              <ul>
+                <li><b>Journal Reviewer</b></li>
+                IEEE Transactions on Knowledge and Data Engineering<br>
+                IEEE Transactions on Image Processing<br>
+                IEEE Transactions on Neural Networks and Learning Systems<br>
+                IEEE Transactions on Multimedia<br>
+                IEEE Transactions on Geoscience and Remote Sensing<br>
+                IEEE Transactions on Computational Social Systems<br>
+                Information Fusion<br>
+                Information Science<br>
+                IEEE Geoscience and Remote Sensing Letters<br>
+              </ul>
+              <ul>
+                <li><b>Conference Reviewer</b></li>
+                ACM International Conference on Multimedia 2023<br>
+              </ul>
+
+
+              <h3>
+                Teaching
+              </h3>
+              Duties at various times have included: daily supervisor of master theses.
+              <!-- <ul>
+              <li><b>KU Leuven</b>, Daily supervisor of master theses in Mathematical Engineering, <i>Fall 2020</i>, <i>Fall 2021</i>, <i>Fall 2022</i>, <i>Fall 2023</i></li>
+            </ul> -->
+
+          </div>
+        </div>
       </div>
     </div>
-    <h2>Short Biography</h2>
-    <p>I am a Ph.D. student in School of Computer Science, China University of Geosciences, Wuhan (CUG), since 2021,
-      supervised by Prof. <a href="http://tangchang.net/">Chang Tang</a>. Before that, I received B.S. and M.S. from
-      China University of Geosciences, Wuhan, in 2018 and 2021,
-      respectively.</p>
 
-    <h2>News</h2>
-    <ul>
-      <li>
-        <p> <strong>2023.08</strong> One paper was accepted by Information Science.
-        </p>
-      </li>
-      <li>
-        <p> <strong>2023.01</strong> One paper was accepted by IEEE Transactions on Geoscience and Remote Sensing.</p>
-      </li>
-    </ul>
-    <h2>Publications
-      <a href="https://scholar.google.com/citations?user=8GJLvG8AAAAJ&hl=en" target=&ldquo;blank&rdquo;>[<tt>Google
-          Scholar</tt>]</a>
-    </h2>
-    <ul>
-      <li>
-        <p>
-        <h3><b>Pre-print</b></h3>
-        </p>
-      </li>
-
-      <div id="text-img-container">
-        <div id="img-container">
-          <img src="./images/2023_MS-Former.jpg" alt="" width="180px" />
-        </div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Changdong Li, Xianju Li, Wei Zhang, &ldquo;<a
-              href="https://arxiv.org/pdf/2305.19513.pdf" target=&rdquo;blank&ldquo;>
-              MS-Former: Memory-Supported Transformer for Weakly Supervised Change Detection with Patch-Level Annotations</a>,&rdquo; <i>Under Review.</i><br />
-            <a href="https://arxiv.org/pdf/2311.09726.pdf" target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/MS-Former" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
+    <!-- Footer -->
+    <footer class="container">
+      <br>
+      <hr>
+      <div class="row" style="text-align: center">
+        © 2024 Zhenglai Li. Last updated: July 19, 2024.
       </div>
+    </footer>
+  </section>
 
 
-      <div id="text-img-container">
-        <div id="img-container">
-          <img src="./images/2023_AR-CDNet.jpg" alt="" width="180px" />
-        </div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Xianju Li, Wei Zhang, Jiangfeng Xu, &ldquo;<a
-              href="https://arxiv.org/pdf/2305.19513.pdf" target=&rdquo;blank&ldquo;>Towards Accurate and Reliable
-              Change Detection of Remote Sensing Images via Knowledge Review and Online Uncertainty
-              Estimation</a>,&rdquo; <i>Under Review.</i><br />
-            <a href="https://arxiv.org/pdf/2305.19513.pdf" target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/AR-CDNet" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+  <script>
 
-      <li>
-        <p>
-        <h3><b>2023</b></h3>
-        </p>
-      </li>
+    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
 
-      <div id="text-img-container">
-        <div id="img-container">
-          <img src="./images/2023_MSL-MKC.jpg" alt="" width="180px" />
-        </div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Xiao Zheng, Zhiguo Wan, Kun Sun, Wei Zhang, Xinzhong Zhu, &ldquo;<a
-              href="https://github.com/guanyuezhen/MSL-MKC" target=&rdquo;blank&ldquo;>Mutual Structure Learning for
-              Multiple Kernel Clustering</a>,&rdquo; <i>Information Science</i>, 2023.<br />
-            <a href="https://github.com/guanyuezhen/MSL-MKC" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+    $('#sidebar').on('click', 'a', function () {
+      activate($(this))
+    });
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2023TGRS_A2Net.jpg" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Wei Zhang, Jie Dou, Lizhe Wang,
-            Albert Zomaya, &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10034814"
-              target=&rdquo;blank&ldquo;>Lightweight Remote Sensing Change Detection with Progressive Aggregation and
-              Supervised Attention</a>,&rdquo; <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2023.<br />
-            <a href="https://ieeexplore.ieee.org/abstract/document/10034814"
-              target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/A2Net" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+    $(window).on('resize', debounce(calculateBoundary, 300));
 
-      <li>
-        <p>
-        <h3><b>2022</b></h3>
-        </p>
-      </li>
+    $(document).on('scroll', debounce(judgeScroll, 300));
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2022TGRS_TFI-GR.jpg" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Lizhe Wang, Albert Zomaya, &ldquo;<a
-              href="https://ieeexplore.ieee.org/abstract/document/9863802" target=&rdquo;blank&ldquo;>Remote Sensing
-              Change Detection via Temporal Feature Interaction and Guided Refinement </a>,&rdquo; <i>IEEE Transactions
-              on Geoscience and Remote Sensing</i>, 2022.<br />
-            <a href="https://ieeexplore.ieee.org/abstract/document/9863802"
-              target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/TFI-GR" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+    calculateBoundary();
+    judgeScroll();
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2022MM_EMKC.png" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p> Chang Tang, <b>Zhenglai Li</b> (co-first author), Weiqing Yan, Guanghui Yue,
-            Wei Zhang, &ldquo;<a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548153"
-              target=&rdquo;blank&ldquo;>Efficient Multiple Kernel Clustering via Spectral Perturbation</a>,&rdquo;
-            <i>ACM International Conference on Multimedia</i>, 2022.<br />
-            <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548153" target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-          </p>
-        </div>
-      </div>
+    function calculateBoundary() {
+      offsetList = $hashList.map(function (idx, ele) {
+        return $(ele.hash).offset().top
+      });
+      maxScrollHeight = $(document).height() - $(window).height()
+    }
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2022TKDE_UOMVSC.png" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p> Chang Tang, <b>Zhenglai Li</b> (co-first author), Jun Wang, Xinwang Liu, Wei
-            Zhang, En Zhu, &ldquo;<a href="https://ieeexplore.ieee.org/document/9769920"
-              target=&rdquo;blank&ldquo;>Unified One-step Multi-view Spectral Clustering</a>,&rdquo; <i>IEEE
-              Transactions on Knowledge and Data Engineering</i>, 2022.<br />
-            <a href="https://ieeexplore.ieee.org/document/9769920" target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/UOMvSC" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+    function judgeScroll() {
+      var tps = $("html").scrollTop()
+        ? $("html").scrollTop()
+        : $("body").scrollTop(),
+        len = offsetList.length;
+      if (tps >= maxScrollHeight - 10) {
+        activate($hashList.eq(len - 1));
+        return
+      }
+      for (var i = 0; i < len; i++) {
+        if (tps + 50 < offsetList[i]) {
+          activate($hashList.eq(Math.max(0, i - 1)));
+          return
+        }
+      }
+    }
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2022TIP_HCP-IMSC.jpg" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Xiao Zheng, Xinwang Liu, Wei Zhang, En Zhu, &ldquo;<a
-              href="https://ieeexplore.ieee.org/abstract/document/9718038" target=&rdquo;blank&ldquo;>High-order
-              Correlation Preserved Incomplete Multi-view Subspace Clustering</a>,&rdquo; <i>IEEE Transactions on Image
-              Processing</i>, 2022.<br />
-            <a href="https://ieeexplore.ieee.org/abstract/document/9718038"
-              target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/HCP-IMSC" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+    function activate(ele) {
+      $hashList.removeClass('is-active');
+      ele.addClass('is-active');
+    }
 
-      <li>
-        <p>
-        <h3><b>2021</b></h3>
-        </p>
-      </li>
+    function debounce(fn, delay) {
+      var timeout = null;
+      return function () {
+        var args = arguments;
+        var context = this;
+        if (!timeout) {
+          timeout = setTimeout(function () {
+            timeout = 0;
+            return fn.apply(context, args);
+          }, delay);
+        }
+      };
+    }
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2021TMM_CGL.jpg" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Xiao Zheng, Guanghui Yue, Wei
-            Zhang, En Zhu, &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/9437715"
-              target=&rdquo;blank&ldquo;>Consensus Graph Learning for Multi-view Clustering</a>,&rdquo; <i>IEEE
-              Transactions on Multimedia</i>, 2021.<br />
-            <a href="https://ieeexplore.ieee.org/abstract/document/9437715"
-              target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/CGL" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+    var $showMoreBtn = $('.show-more');
+    $showMoreBtn.click(function () {
+      var $parent = $showMoreBtn.parent();
+      if ($parent.hasClass('partial-visible')) {
+        $showMoreBtn.text('hide').parent().removeClass('partial-visible');
+      } else {
+        $showMoreBtn.text('show more').parent().addClass('partial-visible');
+      }
+    })
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2021ICME_TMBSD.png" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Wei Zhang, Jie Dou, Lizhe Wang,
-            Albert Zomaya, &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/9428106"
-              target=&rdquo;blank&ldquo;>Tensor-Based Multi-View Block-Diagonal Structure Diffusion for Clustering
-              Incomplete
-              Multi-View Data</a>,&rdquo; <i>IEEE International Conference on Multimedia and Expo</i>, 2021.<br />
-            <a href="https://ieeexplore.ieee.org/abstract/document/9428106"
-              target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-            <a href="https://github.com/guanyuezhen/TMBSD" target=&ldquo;blank&rdquo;>[<tt>Code</tt>]</a>
-          </p>
-        </div>
-      </div>
+    var psbCount = 3;
+    $('#avatar').attr('src', './images/psb' + (1 + (Math.random() * 100 >> 0) % psbCount) + '.png')
 
-      <li>
-        <p>
-        <h3><b>2019</b></h3>
-        </p>
-      </li>
 
-      <div id="text-img-container">
-        <div id="img-container"><img src="./images/2019_DCMSC.png" alt="" width="180px" /></div>
-        <div id="text-container">
-          <p><b>Zhenglai Li</b>, Chang Tang, Jiajia Chen, Cheng Wan, Weiqing Yan, Xinwang
-            Liu, &ldquo;<a href="https://www.sciencedirect.com/science/article/pii/S0925231219311105"
-              target=&rdquo;blank&ldquo;>Diversity and Consistency Learning Guided Spectral Embedding for Multi-view
-              Clustering</a>,&rdquo; <i>Neurocomputing</i>, 2019.<br />
-            <a href="https://www.sciencedirect.com/science/article/pii/S0925231219311105"
-              target=&ldquo;blank&rdquo;>[<tt>Paper</tt>]</a>
-          </p>
-        </div>
-      </div>
 
-    </ul>
-    <h2>Honors and Awards</h2>
-    <ul>
-      <li>
-        <p>The Rui-Ming Alumni Scholarship in China University of Geosciences, Wuhan in 2022. </p>
-      </li>
-      <li>
-        <p>The Third Prize of the 17th China Post-graduate Mathematical Contest in Modeling. </p>
-      </li>
-      <li>
-        <p>The Third Prize of the 16th China Post-graduate Mathematical Contest in Modeling. </p>
-      </li>
-    </ul>
+  </script>
 
-    <h2>Journal/Conference Reviewer</h2>
-    <ul>
-      <li>
-        <p>IEEE Transactions on Knowledge and Data Engineering</p>
-      </li>
-      <li>
-        <p>IEEE Transactions on Neural Networks and Learning Systems</p>
-      </li>
-      <li>
-        <p>IEEE Transactions on Multimedia</p>
-      </li>
-      <li>
-        <p>IEEE Transactions on Geoscience and Remote Sensing</p>
-      </li>
-      <li>
-        <p>IEEE Transactions on Computational Social Systems</p>
-      </li>
-      <li>
-        <p>Information Science</p>
-      </li>
-      <li>
-        <p>IEEE Geoscience and Remote Sensing Letters</p>
-      </li>
-      <li>
-        <p>ACM International Conference on Multimedia 2023</p>
-      </li>
-    </ul>
-
-    <h2>Visitor</h2>
-    <script type='text/javascript' id='clustrmaps'
-      src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=rEET13S5KgQ7jwbd_dxFYkulH0Ngcogp7YrfYZdwWVA&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
-
-  </div> <!-- <div id="layout-content"> -->
-  <div id="footer-container">
-    <div id="footer">
-      <div id="footer-text">
-        <div align="center">© 2023 Zhenglai Li. Hosted by <a href="https://pages.github.com">GitHub Pages</a>.<br />
-        </div>
-      </div>
-      <!-- <div id="footer-text"> -->
-    </div> <!-- <div id="footer"> -->
-  </div> <!-- <div id="footer-container"> -->
 
 </body>
 
