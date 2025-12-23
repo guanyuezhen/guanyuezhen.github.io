@@ -84,6 +84,9 @@
     .news-list:not(.partial-visible) .show-more {
       display: block !important;
     }
+    .highlight {
+            color: #6a5acd; /* Soft purple color */
+        }
   </style>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 </head>
@@ -101,7 +104,8 @@
             </figure>
             <div class="content">
               <h3 style="margin-top: 1em">Zhenglai Li</h3>
-              <h6><a href="https://www.siat.ac.cn/">Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences</a></h6>
+              <h10><a href="https://www.siat.ac.cn/">Shenzhen Institutes of Advanced Technology, Chinese Academy of
+                  Sciences</a></h10>
             </div>
             <!-- details -->
             <div class="details">
@@ -130,7 +134,8 @@
                 <li><a href="#miscellaneous">Miscellaneous</a></li>
               </ul>
               <div class="column" style="width: 95%">
-                <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=rEET13S5KgQ7jwbd_dxFYkulH0Ngcogp7YrfYZdwWVA&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+                <script type='text/javascript' id='clustrmaps'
+                  src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=rEET13S5KgQ7jwbd_dxFYkulH0Ngcogp7YrfYZdwWVA&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
               </div>
             </div>
           </div>
@@ -142,26 +147,35 @@
 
             <!--About Me-->
             <h3 id="intro">About Me</h3>
-            <p>
-              <li> Postdoctoral Research Fellow at the Center for Algorithms and Learning Theory, <a href="https://szs.siat.ac.cn/">Institute of Advanced Computing and Digital Engineering</a>, <a href="https://www.siat.ac.cn/">Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences</a>, supervised by <a href="https://homepages.inf.ed.ac.uk/hsun4/index.html">Prof. He Sun</a>, 07/2025 - present.</li>
-              <li> Assistant Professor at the <a href="https://fds.cityu.edu.mo/">Faculty of Data Science</a>, <a href="https://cityu.edu.mo/en/">City University of Macau (CityU Macau)</a>, 08/2024 - 06/2025.</li>
-              <li> Ph.D. degree in Geo-information Engineering supervised by <a href="https://tangchang.net/">Prof. Chang Tang</a> from the <a href="https://cs.cug.edu.cn/">School of Computer Science</a>, <a href="https://en.cug.edu.cn/">China University of Geosciences, Wuhan (CUG)</a>, 09/2021 - 06/2024.</li>
-              <li> M.S. degree in Computer Technology supervised by <a href="https://tangchang.net/">Prof. Chang Tang</a> from the <a href="https://cs.cug.edu.cn/">School of Computer Science</a>, <a href="https://en.cug.edu.cn/">China University of Geosciences, Wuhan (CUG)</a>, 09/2018 - 06/2021.</li>
+            <ul class="partial-visible news-list">
+              <li> Postdoctoral Research Fellow at the Center for Algorithms and Learning Theory, <a
+                  href="https://szs.siat.ac.cn/">Institute of Advanced Computing and Digital Engineering</a>, <a
+                  href="https://www.siat.ac.cn/">Shenzhen Institutes of Advanced Technology, Chinese Academy of
+                  Sciences</a>, supervised by <a href="https://homepages.inf.ed.ac.uk/hsun4/index.html">Prof. He
+                  Sun</a>, 07/2025 - present.</li>
+              <li> Assistant Professor at the <a href="https://fds.cityu.edu.mo/">Faculty of Data Science</a>, <a
+                  href="https://cityu.edu.mo/en/">City University of Macau (CityU Macau)</a>, 08/2024 - 06/2025.</li>
+              <li> Ph.D. degree in Geo-information Engineering supervised by <a href="https://tangchang.net/">Prof.
+                  Chang Tang</a> from the <a href="https://cs.cug.edu.cn/">School of Computer Science</a>, <a
+                  href="https://en.cug.edu.cn/">China University of Geosciences, Wuhan (CUG)</a>, 09/2021 - 06/2024.
+              </li>
+              <li> M.S. degree in Computer Technology supervised by <a href="https://tangchang.net/">Prof. Chang
+                  Tang</a> from the <a href="https://cs.cug.edu.cn/">School of Computer Science</a>, <a
+                  href="https://en.cug.edu.cn/">China University of Geosciences, Wuhan (CUG)</a>, 09/2018 - 06/2021.
+              </li>
               <li> B.E. degree in Exploration Technology and Engineering from the <a
-                  href="https://dkxy.cug.edu.cn/index.htm">School of Geophysics and Geomatics</a>, <a href="https://en.cug.edu.cn/">China University of Geosciences, Wuhan (CUG)</a>, 09/2014 - 06/2018.</li>
-            </p>
+                  href="https://dkxy.cug.edu.cn/index.htm">School of Geophysics and Geomatics</a>, <a
+                  href="https://en.cug.edu.cn/">China University of Geosciences, Wuhan (CUG)</a>, 09/2014 - 06/2018.
+              </li>
+            </ul>
 
             <h3 id="intro">Research Interests</h3>
             <p>
-              My research area is in Machine Learning and Deep Learning. Specific topics include:
-              <li> self-supervised/unsupervised/weakly-supervised learning</li>
-              <li> multi-view/modal representation learning</li>
-              <li> clustering algorithm</li>
+              My research focuses on <span class="highlight">Representation Learning</span>, specifically on deriving meaningful and robust representations from diverse data types, including unlabeled, multi-modal data and graphs. Recently, we have concentrated on <span class="highlight">Self-supervised Learning</span>, <span class="highlight">Multi-modal Learning</span>, <span class="highlight">Graph Learning</span>, and <span class="highlight">Theoretically Sound Algorithms</span> to address critical challenges in Artificial Intelligence.
             </p>
-            <!-- <h3 id="intro">Recruitment for Master Students / Interns</h3> -->
-            <!-- <p>
-              <font color="red">NEW</font>: I am happy to host remote graduate / undergraduate visitors and actively looking for master students with basic mathematical abilities and coding skills to collaborate with me on research topics in machine learning and deep learning. If you're interested, please send your detailed resume to "zlli@cityu.edu.mo"!
-            </p> -->
+            <p>
+              😊: <span class="highlight">I am actively looking for students with basic mathematical abilities and coding skills to collaborate on research projects in machine learning and deep learning. If you are interested, please feel free to email me at "zhenglai.li@siat.ac.cn"!</span>
+            </p>
 
             <!--News-->
             <h3 id="news">
@@ -169,39 +183,35 @@
             </h3>
             <ul class="partial-visible news-list">
               <li>
-                <span>
-                  [08/2025] One paper "Boosting Remote Sensing Change Detection via Hard Region Mining" has been accepted to IEEE Transactions on Geoscience and Remote Sensing.
+                [09/2025] One co-author paper "Scalable Cross-View Sample Alignment for Multi-View Clustering with View
+                Structure Similarity" has been accepted to Neural Information Processing Systems.
               </li>
               <li>
-                <span>
-                  [07/2025] One paper "Mask-informed Deep Contrastive Incomplete Multi-view Clustering" has been accepted to IEEE Transactions on Circuits and Systems for Video Technology.
+                [08/2025] One paper "Boosting Remote Sensing Change Detection via Hard Region Mining" has been accepted
+                to IEEE Transactions on Geoscience and Remote Sensing.
               </li>
               <li>
-                <span>
-                  [07/2024] One co-author paper "Heterogeneous Graph Guided Contrastive Learning for Spatially Resolved Transcriptomics Data" has been accepted to ACM International Conference on Multimedia.
+                [07/2025] One paper "Mask-informed Deep Contrastive Incomplete Multi-view Clustering" has been accepted
+                to IEEE Transactions on Circuits and Systems for Video Technology.
               </li>
-
               <li>
-                <span>
-                  [06/2024] I have been awarded a Doctor Degree of Geo-information Engineering (PhD) on Jun 20, 2024.
+                [07/2024] One co-author paper "Heterogeneous Graph Guided Contrastive Learning for Spatially Resolved
+                Transcriptomics Data" has been accepted to ACM International Conference on Multimedia.
               </li>
-              
               <li>
-                <span>
-                  [05/2024] One paper <a href="https://ieeexplore.ieee.org/abstract/document/10534838" target="_blank">"MS-Former: Memory-Supported Transformer for Weakly Supervised Change Detection With Patch-Level Annotations"</a> has been accepted to IEEE Transactions on Geoscience and Remote Sensing.
+                [06/2024] I have been awarded a Doctor Degree of Geo-information Engineering (PhD) on Jun 20, 2024.
               </li>
-
               <li>
-                <span>
-                  [05/2024] One co-author paper <a href="https://ieeexplore.ieee.org/abstract/document/10529609" target="_blank">"Multiple Kernel Clustering with Adaptive Multi-scale Partition Selection"</a> has been accepted to IEEE Transactions on Knowledge and Data Engineering.
+                [05/2024] One paper "MS-Former: Memory-Supported Transformer for Weakly Supervised Change Detection With
+                Patch-Level Annotations" has been accepted to IEEE Transactions on Geoscience and Remote Sensing.
+              </li>
+              <li>
+                [05/2024] One co-author paper "Multiple Kernel Clustering with Adaptive Multi-scale Partition Selection"
+                has been accepted to IEEE Transactions on Knowledge and Data Engineering.
               </li>
             </ul>
 
-
-            <h3 id="publications">Publications <span
-                style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .1rem;"><a
-                  href="https://scholar.google.com/citations?user=8GJLvG8AAAAJ&hl" target="_blank">[Google
-                  Scholar]</a></span></h3>
+            <h3 id="publications">Preprint</h3>
 
             <article class="columns">
               <div class="column is-3">
@@ -244,7 +254,7 @@
                       Learning Disentangled Representations for Generalized Multi-view Clustering
                     </b>
                     <br>
-                    Xin Zou, Ruimeng Liu, Chang Tang,  <b>Zhenglai Li</b>, Xinwang Liu,  Kunlun He, Wanqing Li
+                    Xin Zou, Ruimeng Liu, Chang Tang, <b>Zhenglai Li</b>, Xinwang Liu, Kunlun He, Wanqing Li
                     <br>
                     <i>
                       Under Review
@@ -290,34 +300,6 @@
             <article class="columns">
               <div class="column is-3">
                 <figure class="image">
-                  <img src="images/publications/DEMO.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>
-                      Dynamic Information Filtering Network for Credit Default Prediction of Tabular Data with Small-Sample Size
-                    </b>
-                    <br>
-                    Yandan Tan, <b>Zhenglai Li</b>, Yubing Bao, Hongbin Zhu, Jie Wu, Hongfeng Chai
-                    <br>
-                    <i>
-                      Under Review
-                    </i>
-                    <br>
-                    [PDF]
-                    [BibTeX]
-                    [Code (GitHub)]
-                    <br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
                   <img src="images/publications/2024_TMC.png">
                 </figure>
               </div>
@@ -343,6 +325,39 @@
               </div>
             </article>
 
+            <h3 id="publications">Publications <span
+                style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .1rem;"><a
+                  href="https://scholar.google.com/citations?user=8GJLvG8AAAAJ&hl" target="_blank">[Google
+                  Scholar]</a></span></h3>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/2025_SSAMVC.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>
+                      Scalable Cross-View Sample Alignment for Multi-View Clustering with View Structure Similarity
+                    </b>
+                    <br>
+                    Jun Wang, <b>Zhenglai Li</b>, Chang Tang, Suyuan Liu, Hao Yu, Chuan Tang, Miaomiao Li, Xinwang Liu
+                    <br>
+                    <i>
+                      Neural Information Processing Systems (<b>NeurIPS</b>), 2025
+                    </i>
+                    <br>
+                    [PDF]
+                    [BibTeX]
+                    [Code (GitHub)]
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
             <article class="columns">
               <div class="column is-3">
                 <figure class="image">
@@ -356,7 +371,8 @@
                       Boosting Remote Sensing Change Detection via Hard Region Mining
                     </b>
                     <br>
-                    <b>Zhenglai Li</b>, Chang Tang, Xingchen Hu, Ning Li, Sen Xiang, Chuankun Li, Changdong Li, Xinwang Liu
+                    <b>Zhenglai Li</b>, Chang Tang, Xingchen Hu, Ning Li, Sen Xiang, Chuankun Li, Changdong Li, Xinwang
+                    Liu
                     <br>
                     <i>
                       IEEE Transactions on Geoscience and Remote Sensing (<b>TGRS</b>), 2025
@@ -439,7 +455,8 @@
                 <div class="content">
                   <p>
                     <b>
-                      MS-Former: Memory-Supported Transformer for Weakly Supervised Change Detection with Patch-Level Annotations
+                      MS-Former: Memory-Supported Transformer for Weakly Supervised Change Detection with Patch-Level
+                      Annotations
                     </b>
                     <br>
                     <b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Changdong Li, Xianju Li, Wei Zhang
@@ -535,7 +552,8 @@
                       Information Sciences, 2023
                     </i>
                     <br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0020025523010307" target="_blank">[PDF]</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0020025523010307"
+                      target="_blank">[PDF]</a>
                     <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
                     <a href="https://github.com/guanyuezhen/MSL-MKC" target="_blank"
                       class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
@@ -555,7 +573,8 @@
                 <div class="content">
                   <p>
                     <b>
-                      Lightweight Remote Sensing Change Detection with Progressive Feature Aggregation and Supervised Attention
+                      Lightweight Remote Sensing Change Detection with Progressive Feature Aggregation and Supervised
+                      Attention
                     </b>
                     <br>
                     <b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Wei Zhang, Jie Dou, Lizhe Wang, Albert Zomaya
@@ -640,7 +659,8 @@
                 <div class="content">
                   <p>
                     <b>
-                      Unified K-means Coupled Self-representation and Neighborhood Kernel Learning for Clustering Single-cell RNA-Sequencing Data
+                      Unified K-means Coupled Self-representation and Neighborhood Kernel Learning for Clustering
+                      Single-cell RNA-Sequencing Data
                     </b>
                     <br>
                     Zheng Li, Chang Tang, Xiao Zheng, <b>Zhenglai Li</b>, Wei Zhang, Lijuan Cao
@@ -649,7 +669,8 @@
                       Neurocomputing, 2022
                     </i>
                     <br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0925231222007664" target="_blank">[PDF]</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0925231222007664"
+                      target="_blank">[PDF]</a>
                     <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
                     <br>
                   </p>
@@ -707,7 +728,8 @@
                     <br>
                     <a href="https://ieeexplore.ieee.org/abstract/document/9718038" target="_blank">[PDF]</a>
                     <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
-                    <a href="https://github.com/guanyuezhen/HCP-IMSC" target="_blank"  class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
+                    <a href="https://github.com/guanyuezhen/HCP-IMSC" target="_blank"
+                      class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
                     <br>
                   </p>
                 </div>
@@ -733,7 +755,8 @@
                       Information Fusion, 2021
                     </i>
                     <br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S1566253521001950" target="_blank">[PDF]</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1566253521001950"
+                      target="_blank">[PDF]</a>
                     <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
                     <a href="https://github.com/WangJun2023/RLFFC" target="_blank"
                       class="next-element-vertical-align-text-top">[Code (GitHub)]</a>
@@ -753,7 +776,8 @@
                 <div class="content">
                   <p>
                     <b>
-                      Tensor-Based Multi-View Block-Diagonal Structure Diffusion for Clustering Incomplete Multi-View Data
+                      Tensor-Based Multi-View Block-Diagonal Structure Diffusion for Clustering Incomplete Multi-View
+                      Data
                     </b>
                     <br>
                     <b>Zhenglai Li</b>, Chang Tang, Xinwang Liu, Xiao Zheng, Wei Zhang, En Zhu
@@ -800,7 +824,7 @@
                 </div>
               </div>
             </article>
-            
+
             <article class="columns">
               <div class="column is-3">
                 <figure class="image">
@@ -820,7 +844,8 @@
                       Neurocomputing, 2019
                     </i>
                     <br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0925231219311105" target="_blank">[PDF]</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0925231219311105"
+                      target="_blank">[PDF]</a>
                     <a href="bib/2024_AR-CDNet.bib" target="_blank">[BibTeX]</a>
                     <br>
                   </p>
@@ -829,20 +854,14 @@
             </article>
 
             <h3 id="miscellaneous">
-              Honors and Awards
+              Funding
             </h3>
-            <ul>
+            <ul class="partial-visible news-list">
               <li>
-                The Information Top Talent Scholarship in China University of Geosciences, Wuhan, 2023.
+                Postdoctoral Fellowship Program of CPSF (Grant Number GZC20251065). 07/2025-07/2027.
               </li>
               <li>
-                The Rui-Ming Alumni Scholarship in China University of Geosciences, Wuhan, 2022.
-              </li>
-              <li>
-                The Third Prize of the 17th China Post-graduate Mathematical Contest in Modeling, 2019.
-              </li>
-              <li>
-                The Third Prize of the 16th China Post-graduate Mathematical Contest in Modeling, 2018.
+                China Postdoctoral Science Foundation (Grant Number 2025M781531). 01/2026-07/2027.
               </li>
             </ul>
 
@@ -852,38 +871,28 @@
               <h3>
                 Academic Services
               </h3>
-              <ul>
-                <li><b>Journal Reviewer</b></li>
-                IEEE Transactions on Knowledge and Data Engineering<br>
-                IEEE Transactions on Image Processing<br>
-                IEEE Transactions on Neural Networks and Learning Systems<br>
-                IEEE Transactions on Multimedia<br>
-                IEEE Transactions on Circuits and Systems for Video Technology<br>
-                IEEE Transactions on Geoscience and Remote Sensing<br>
-                IEEE Transactions on Computational Social Systems<br>
-                Information Fusion<br>
-                Information Science<br>
-                IEEE Geoscience and Remote Sensing Letters<br>
-              </ul>
-              <ul>
-                <li><b>Conference Reviewer</b></li>
-                ACM International Conference on Multimedia 2023<br>
-                Neural Information Processing Systems 2024<br>
-                International Conference on Learning Representations 2025<br>
-                International Conference on Artificial Intelligence and Statistics 2025<br>
+              <ul class="partial-visible news-list">
+                <li><b>Journal Reviewer</b>:
+                IEEE TKDE, TIP, TNNLS, TCSVT, TGRS, TCSC, etc
+                </li>
+                <li><b>Conference Reviewer</b>:
+                  ACM MM 2023 2025, NeurIPS 2024 2025, KDD 2025, ICLR 2025, AISTATS 2025, etc
+                </li>
               </ul>
 
 
               <h3>
                 Teaching
               </h3>
-              Duties at various times have included: daily supervisor of master theses.
-              <li>
-                BIT002  Design & Computing Studio 1, City University of Macau, Fall 2024.
-              </li>
-              <!-- <ul>
-              <li><b>KU Leuven</b>, Daily supervisor of master theses in Mathematical Engineering, <i>Fall 2020</i>, <i>Fall 2021</i>, <i>Fall 2022</i>, <i>Fall 2023</i></li>
-            </ul> -->
+              Duties at various times have included: supervisor of students.
+              <ul class="partial-visible news-list">
+                <li>
+                  BIT002 Design & Computing Studio 1 (Python Programing), City University of Macau, Fall 2024.
+                </li>
+                <li>
+                  Digital Marketing (Machine Learning Part), Joint Program between City University of Macau and Minzu University of China, Spring 2025.
+                </li>
+              </ul>
 
           </div>
         </div>
@@ -895,7 +904,7 @@
       <br>
       <hr>
       <div class="row" style="text-align: center">
-        © 2024 Zhenglai Li. Last updated: Aug 15, 2025.
+        © 2024 Zhenglai Li. Last updated: Dec 24, 2025.
       </div>
     </footer>
   </section>
